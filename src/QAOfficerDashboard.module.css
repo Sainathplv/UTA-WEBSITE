@@ -1,0 +1,194 @@
+.mainContent {
+    display: flex;
+    min-height: calc(100vh - 100px);
+}
+
+.sidebar {
+    background-color: #333A50;
+    width: 20%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+}
+
+.sidebarLink {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebarLink .fas {
+    margin-right: 10px;
+}
+
+.sidebarLink:hover {
+    text-decoration: underline;
+}
+
+.mainSection {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.qaCard {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.qaCard:hover {
+    transform: scale(1.05);
+}
+
+.qaLink {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #23356B;
+}
+
+.qaLink:hover {
+    text-decoration: underline;
+}
+
+/* ... Previous styling ... */
+
+.review-course-content {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 20px;
+}
+
+.course-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 25%;  /* Increase sidebar width slightly for tablet view */
+    }
+
+    .qaCard {
+        flex: 1 1 calc(100% - 40px);  /* Full width for each card on tablet view */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row for tablets */
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    .mainContent {
+        flex-direction: column;  /* Stack sidebar and main section vertically */
+    }
+
+    .sidebar {
+        width: 100%;  /* Sidebar occupies full width */
+        padding: 15px;  /* Reduce padding for mobile */
+    }
+
+    .sidebar h2 {
+        font-size: 1.1em;  /* Reduce font size for headers in sidebar */
+    }
+
+    .mainSection {
+        padding: 15px;  /* Reduce padding for mobile */
+    }
+
+    .qaCard {
+        flex: 1 1 calc(100% - 30px);  /* Full width for each card on mobile view with reduced gap */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;  /* One card per row for mobiles */
+        gap: 15px;  /* Reduced gap between grid items */
+    }
+
+    button, input[type="text"], input[type="file"] {
+        padding: 8px 12px;  /* Reduce padding for mobile buttons and inputs */
+    }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+    .sidebar h2 {
+        font-size: 1em;  /* Further reduce font size for headers in sidebar */
+    }
+
+    .sidebarLink .fas {
+        margin-right: 5px;  /* Reduce margin for icons in sidebar links */
+    }
+
+    .qaCard {
+        padding: 15px;  /* Reduce padding for each card on small mobile view */
+    }
+}
+
+
+
+
+

@@ -1,0 +1,97 @@
+/* Container for the entire ManageCourses section */
+
+.mainSection {
+    width: 75%; /* adjust based on your design needs */
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #d9534f; /* bootstrap danger color */
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 5px;
+  }
+  
+  /* Centered headings */
+  .center {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Form styles */
+  form {
+    margin-bottom: 40px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: black;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #c9302c;
+  }
+  

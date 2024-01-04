@@ -1,0 +1,49 @@
+.coordinator-dashboard {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.coordinator-dashboard .main-section {
+    background-color: #fff;
+    flex: 1;
+    padding: 30px 40px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 80vh;
+}
+
+.coordinator-dashboard .report {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #23356B;
+    padding-bottom: 20px;
+}
+
+.coordinator-dashboard .report h3 {
+    border-bottom: 2px solid #23356B;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #23356B;
+    font-weight: 600;
+}
+
+.coordinator-dashboard .report ul,
+.coordinator-dashboard .report ol {
+    padding-left: 20px;
+}
+
+.coordinator-dashboard .report li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.coordinator-dashboard .report p strong,
+.coordinator-dashboard .report li strong {
+    color: #23356B;
+    font-weight: 600;
+}

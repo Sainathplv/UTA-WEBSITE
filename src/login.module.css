@@ -1,0 +1,82 @@
+/* Login.module.css */
+
+.loginContainer {
+    height: 100vh;
+    width: 100%;
+    background: url('login.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginBox {
+    width: 300px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Important for z-index to work */
+    z-index: 2; /* Ensure the box appears above the background */
+  }
+  
+  .loginBox h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .loginBox input[type="text"],
+  .loginBox input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .loginBox input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .loginBox input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .loginBox .forgot-password,
+  .loginBox .signup,
+  .loginBox .back-to-home {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .loginBox .forgot-password a,
+  .loginBox .signup a,
+  .loginBox .back-to-home a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .loginBox .forgot-password a:hover,
+  .loginBox .signup a:hover,
+  .loginBox .back-to-home a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .loginBox {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

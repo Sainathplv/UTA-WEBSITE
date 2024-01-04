@@ -1,0 +1,258 @@
+/* AdminDashboard.module.css */
+
+.mainContent {
+    display: flex;
+    min-height: calc(100vh - 100px);
+    background-color: #f4f4f4;
+}
+
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #333A50;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+}
+
+.sidebarLink {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.sidebarLink .fas {
+    margin-right: 10px;
+}
+
+.sidebarLink:hover {
+    text-decoration: underline;
+}
+
+.mainSection {
+    width: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.adminCard {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.adminCard:hover {
+    transform: scale(1.05);
+}
+
+.adminLink {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #23356B;
+}
+
+.adminLink:hover {
+    text-decoration: underline;
+}
+
+/* Review Course Content Styling */
+
+.review-course-content {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #f7f7f7;
+}
+
+td input[type="submit"] {
+    margin-right: 10px;
+    background-color: #f44336;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+td input[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+td input[type="submit"]:first-of-type {
+    background-color: #ffb74d;
+}
+
+td input[type="submit"]:first-of-type:hover {
+    background-color: #ffa726;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    .mainContent {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidebar h2 {
+        font-size: 1.1em;
+    }
+
+    .mainSection {
+        padding: 15px;
+    }
+
+    .adminCard {
+        flex: 1 1 calc(100% - 20px);  
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    button, input[type="text"], input[type="file"], textarea, select {
+        padding: 8px 12px;
+    }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+    .sidebar h2 {
+        font-size: 1em;
+    }
+
+    .sidebarLink .fas {
+        margin-right: 5px;
+    }
+
+    .adminCard {
+        padding: 15px;
+    }
+    
+    table {
+        width: 100%;
+    }
+}
